@@ -1,1 +1,5 @@
-/* CSS come as objects in react jsx when css imported */
+/* 
+/*CSS come as objects in react jsx when css imported 
+/* import './App.css' is a form of import css which will work globally
+/* import classes from './Component.module.css',this kind of imported css works only with this component.
+*/
