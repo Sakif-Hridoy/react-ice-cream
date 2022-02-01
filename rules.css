@@ -5,5 +5,28 @@
 /* join method converts array into string
 /* to take two or more classes together,then the code is like blow
 /*<div class={["container",classes.container].join(' ')}>
-
 */
+
+
+
+/* Method of receive props */
+
+/* const Layout = ({children}) => { //destructuring method,beacuse props is default so,only children
+  return (
+    <div>
+        {children}
+    </div>
+  )
+}; */
+
+/* function App() {
+  return (
+      //Layout Is parent
+    <Layout>
+    //These are children which are calling on Layout Component
+      <Header />
+      <Body />
+      <Footer />
+    </Layout>
+  );
+} */
