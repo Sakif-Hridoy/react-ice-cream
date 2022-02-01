@@ -4,6 +4,6 @@
 /* import classes from './Component.module.css',this kind of imported css works only with this component.
 /* join method converts array into string
 /* to take two or more classes together,then the code is like blow
-/*<div class={["container",classes.container].join()}>
+/*<div class={["container",classes.container].join(' )}>
 
 */

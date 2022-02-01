@@ -4,7 +4,7 @@ import classes from './Footer.module.css';
 const Footer = () => {
   return (
     <footer>
-        <div class={["container",classes.container].join()}>
+        <div class={["container",classes.container].join(' ')}>
           <div>
             Copyright &copy;2020.
           </div>
