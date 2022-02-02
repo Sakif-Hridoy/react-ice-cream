@@ -1,13 +1,15 @@
 import React from 'react';
 import classes from './Builder.module.css';
+import Items from './Items/Items';
+import TotalPrice from './TotalPrice/TotalPrice';
 
-export const Builder = () => {
+const Builder = () => {
   return (
       <div>
           <div class={classes.builder}>
               <h3>Build your own ice cream builder</h3>
-              {/* items */}
-              {/* totalprice */}
+              <Items />
+              <TotalPrice/>
               <button type="button" class={[classes.order,'rounded'].join()}>
                   Add To cart
               </button>
@@ -15,3 +17,5 @@ export const Builder = () => {
       </div>
   );
 };
+
+export default Builder;
