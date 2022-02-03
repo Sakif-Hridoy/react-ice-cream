@@ -7,7 +7,7 @@ export default class IceCreamBuilder extends Component {
   state = {
     items:{
       vanilla:45,
-      chocolat:50,
+      chocolate:50,
       lemon:35,
       orange:40,
       strawberry:60,
@@ -21,7 +21,7 @@ export default class IceCreamBuilder extends Component {
     return (
         <div class={['container',classes.container].join(' ')}>
             <IceCream items={items}/>
-            <Builder/>
+            <Builder items={items}/>
         </div>
     )
   }

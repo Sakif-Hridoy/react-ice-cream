@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './Scoop.module.css'
+import classes from './Scoop.module.css';
 
-const Scoop = () => {
+const Scoop = ({scoop}) => {
   return (
     //   classes.orange are dynamic
-      <div class={[classes.scoop,classes.orange].join(' ')}></div>
+      <div class={[classes.scoop,classes[scoop]].join(' ')} />
   )
 };
 
