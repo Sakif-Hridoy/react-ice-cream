@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Builder.module.css';
 import Items from './Items/Items';
 import TotalPrice from './TotalPrice/TotalPrice';
-import Modal from './TotalPrice/TotalPrice'
+import Modal from './TotalPrice/TotalPrice';
 
 const Builder = () => {
   return (
@@ -11,7 +11,7 @@ const Builder = () => {
               <h3>Build your own ice cream builder</h3>
               <Items />
               <TotalPrice/>
-              <button type="button" class={[classes.order,'rounded'].join()}>
+              <button type="button" class={[classes.order,'rounded'].join(' ')}>
                   Add To cart
               </button>
           </div>

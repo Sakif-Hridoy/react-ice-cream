@@ -2,7 +2,8 @@ import React from 'react';
 import classes from './IceCream.module.css';
 import Scoop from '../Scoop/Scoop';
 
-const IceCream = () => {
+const IceCream = ({items}) => {
+  const flavors = Object.keys(items);//Object.Keys are a metthod of make an array
   return (
     <div>
     <div class={classes.icecream}>
@@ -13,7 +14,7 @@ const IceCream = () => {
       <div class={classes.cherry}/>
     </div>
   </div>
-  )
+  );
 };
 
 export default IceCream;
