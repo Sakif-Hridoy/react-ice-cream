@@ -9,7 +9,7 @@ const Items = ({items}) =>{
             <ul>
                 {
                     tastes.map(taste=>(
-                        <Item key={taste} name={taste}/>
+                        <Item key={taste} name={taste}/>//The Method is object={key:value},so,the first elements would be the keys(props name) automatically
                         // <Item key={flavor} name={flavor} />
                     ))
                 }
