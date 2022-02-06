@@ -1,11 +1,14 @@
 import React from 'react';
 import classes from './Item.module.css';
+import {countBy} from 'lodash';
 
-const Item = ({name,add,remove}) => {
+const Item = ({name,add,remove,scoops}) => {
+  const scoopsByCount = countBy(scoops);
+  console.log(scoopsByCount);
   return (
     <li class={classes.item}>
     <span>{name}</span>
-    <span class={classes.quantity}>2</span>
+    <span class={classes.quantity}>{scoopsByCount[name]}</span>
     <div class="right">
       <button onClick={add.bind(this, name)} type="button" class={[classes.plus,'rounded'].join(' ')}>+</button>
       <button onClick={remove.bind(this, name)} type="button" class={[classes.minus,'rounded'].join(' ')}>-</button>
