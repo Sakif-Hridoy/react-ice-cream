@@ -12,7 +12,7 @@ const IceCream = ({scoops}) => {
       <div class={classes.icecream}>
         <p class={classes.cone}/>
         {/* <p>Please start adding scoops</p> */}
-        {scoops.map(scoop=> <Scoop key={scoop} scoop={scoop}/>)}
+        {scoops.map(scoop=> <Scoop key={`${scoop} ${Math.random()}`} scoop={scoop}/>)}
         <div class={classes.cherry}/>
       </div>
   </div>

@@ -16,6 +16,14 @@ export default class IceCreamBuilder extends Component {
     totalPrice:0,
   };
 
+  componentDidMount(){
+    console.log('[IceCreamBuilder]')
+  }
+
+  componentDidUpdate(){
+    console.log('[IceCreamBuilder] update')
+  }
+
   addScoop = (scoop)=>{
       const {scoops,items,totalPrice} = this.state;
       const workingScoops = [...scoops];
