@@ -1,14 +1,14 @@
 import React from 'react';
 import classes from './Item.module.css';
 
-const Item = ({name}) => {
+const Item = ({name,add,remove}) => {
   return (
     <li class={classes.item}>
     <span>{name}</span>
     <span class={classes.quantity}>2</span>
     <div class="right">
-      <button type="button" class={[classes.plus,'rounded'].join(' ')}>+</button>
-      <button type="button" class={[classes.minus,'rounded'].join(' ')}>-</button>
+      <button onClick={add.bind(this, name)} type="button" class={[classes.plus,'rounded'].join(' ')}>+</button>
+      <button onClick={remove.bind(this, name)} type="button" class={[classes.minus,'rounded'].join(' ')}>-</button>
     </div>
   </li>
   );
