@@ -42,10 +42,10 @@ export default class IceCreamBuilder extends Component {
   }
 
   render() {
-    const {items,totalPrice} = this.state;
+    const {items,totalPrice,scoops} = this.state;
     return (
         <div class={['container',classes.container].join(' ')}>
-            <IceCream />
+            <IceCream scoops={scoops} />
             <Builder items={items} price={totalPrice} add={this.addScoop} remove={this.removeScoop}/>
         </div>
     )

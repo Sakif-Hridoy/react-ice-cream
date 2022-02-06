@@ -2,7 +2,8 @@ import React from 'react';
 import classes from './IceCream.module.css';
 import Scoop from '../Scoop/Scoop';
 
-const IceCream = () => {
+const IceCream = ({scoops}) => {
+  console.log(scoops);
   // const flavors = Object.keys();
   // console.log(flavors)
   //Object.Keys are a metthod of make an array from classes
@@ -11,7 +12,7 @@ const IceCream = () => {
       <div class={classes.icecream}>
         <p class={classes.cone}/>
         {/* <p>Please start adding scoops</p> */}
-        <Scoop />
+        {scoops.map(scoop=> <Scoop key={scoop} scoop={scoop}/>)}
         <div class={classes.cherry}/>
       </div>
   </div>
