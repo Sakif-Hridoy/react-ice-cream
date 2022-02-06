@@ -9,7 +9,7 @@ export default class IceCreamBuilder extends Component {
     scoops:[],
     totalPrice:0,
   };
-
+// Access firebase api
   componentDidMount(){
     fetch('https://icecream-builder-d71a5-default-rtdb.asia-southeast1.firebasedatabase.app/items.json')
     .then((response)=>response.json())
